@@ -1,0 +1,16 @@
+.source{
+    margin: 20px 0;
+}
+
+.source a{
+    font-size: small;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    opacity: .6;
+}
+
+.source a:hover{
+    text-decoration: underline;
+}
