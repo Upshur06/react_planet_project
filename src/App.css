@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#070625;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: white;
+    font-family: 'Spartan', sans-serif;
+}
+
+body::after{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-image: url(/starter-code/assets/background-stars.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(110, 46, 213, 0.5);
+    border-radius: 20px;
+}
+
+.planet_overview{
+    /* border: 2px solid red; */
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.planet{
+    /* border: 2px solid green; */
+    padding: 60px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet_desc{
+    /* border: 2px solid red; */
+    padding-left: 10px;
+    padding-right: ;
+    padding-bottom: 35px; 
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+.planet_description h1{
+    text-transform: uppercase;
+    font-size: 6em;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.planet_description p{
+    color: rgba(220, 220, 240, 0.8);
+    line-height: 1.5;
+}
+
