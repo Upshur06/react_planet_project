@@ -18,12 +18,14 @@ const Earth = () => {
     return (
         <div className='main'>
             <div className='planet_overview'>
-                <PlanetImage img='/assets/planet-earth.svg' />
-                <div className="planet_desc">
-                    <PlanetDescription name={planetDetails.name} content={planetDetails.content} structure={planetDetails.structure} geology={planetDetails.geology} link={planetDetails.link} />  
+                <div className='planet_core'>
+                    <PlanetImage img='/assets/planet-earth.svg' />
+                    <div className="planet_desc">
+                        <PlanetDescription name={planetDetails.name} content={planetDetails.content} structure={planetDetails.structure} geology={planetDetails.geology} link={planetDetails.link} />  
+                    </div>
                 </div>
+                <Footer rotation={planetDetails.rotation} revolution={planetDetails.revolution} radius={planetDetails.radius} temperature={planetDetails.temperature} />           
             </div> 
-            <Footer rotation={planetDetails.rotation} revolution={planetDetails.revolution} radius={planetDetails.radius} temperature={planetDetails.temperature} />           
         </div>
     )
 }

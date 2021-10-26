@@ -19,12 +19,14 @@ const Neptune = () => {
     return (
         <div className='main'>
             <div className='planet_overview'>
+            <div className='planet_core'>
                 <PlanetImage img='/assets/planet-neptune.svg' />
                 <div className="planet_desc">
                     <PlanetDescription name={planetDetails.name} content={planetDetails.content} structure={planetDetails.structure} geology={planetDetails.geology} link={planetDetails.link} />  
                 </div>
-            </div>      
+            </div>
             <Footer rotation={planetDetails.rotation} revolution={planetDetails.revolution} radius={planetDetails.radius} temperature={planetDetails.temperature} />       
+            </div>      
         </div>
     )
 }

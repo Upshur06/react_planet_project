@@ -36,3 +36,47 @@
   font-size: 13px;
   font-weight: 100;
 }
+
+.hamburger{
+  visibility: hidden;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    height: 330px;
+  }
+
+  .header h2{
+    letter-spacing: .3em;
+  }
+
+  /* .hamburger{
+    visibility: visible;
+  } */
+
+  .header_head{
+    /* border: 2px solid yellow; */
+    display: flex;
+    text-align: center;
+    letter-spacing: .4em;
+    justify-content: space-evenly;
+    width: 100%; 
+  }
+
+  .nav{
+    /* border: 2px solid violet; */
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    text-align: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    letter-spacing: .4em;
+
+  }
+
+}

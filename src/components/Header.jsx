@@ -3,19 +3,29 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 
 export default function Header(){
+
     return (
         <div className='header'>
-            <h2>The Planets</h2>
-            <div className="nav">
-                <Link className='nav__item' to='/'>mercury</Link>
-                <Link className='nav__item' to='/venus'>venus</Link>
-                <Link className='nav__item' to='/earth'>earth</Link>
-                <Link className='nav__item' to='/mars'>mars</Link>
-                <Link className='nav__item' to='/jupiter'>jupiter</Link>
-                <Link className='nav__item' to='/saturn'>saturn</Link>
-                <Link className='nav__item' to='/uranus'>uranus</Link>
-                <Link className='nav__item' to='/neptune'>neptune</Link>
+            <div className='header_head'>
+                <h2>The Planets</h2>
+                {/* <div className='hamburger'>
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxgA4Xv81dOtjvbrKheG8DDQr05lVS4GilWzUO7maR5CjxGPZ3SycYkyReoBHmnQSDyZU&usqp=CAU' alt='...'  width='30px' height='30px' onClick={hamburgerHandler} />
+                </div> */}
             </div>
+
+
+                <div className="nav">
+                    <Link className='nav__item' to='/'>mercury</Link>
+                    <Link className='nav__item' to='/venus'>venus</Link>
+                    <Link className='nav__item' to='/earth'>earth</Link>
+                    <Link className='nav__item' to='/mars'>mars</Link>
+                    <Link className='nav__item' to='/jupiter'>jupiter</Link>
+                    <Link className='nav__item' to='/saturn'>saturn</Link>
+                    <Link className='nav__item' to='/uranus'>uranus</Link>
+                    <Link className='nav__item' to='/neptune'>neptune</Link>
+                </div>
+
+            
         </div>
     )
 }
