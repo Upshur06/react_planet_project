@@ -8,11 +8,7 @@ export default function Header(){
         <div className='header'>
             <div className='header_head'>
                 <h2>The Planets</h2>
-                {/* <div className='hamburger'>
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxgA4Xv81dOtjvbrKheG8DDQr05lVS4GilWzUO7maR5CjxGPZ3SycYkyReoBHmnQSDyZU&usqp=CAU' alt='...'  width='30px' height='30px' onClick={hamburgerHandler} />
-                </div> */}
             </div>
-
 
                 <div className="nav">
                     <Link className='nav__item' to='/'>mercury</Link>
@@ -24,8 +20,7 @@ export default function Header(){
                     <Link className='nav__item' to='/uranus'>uranus</Link>
                     <Link className='nav__item' to='/neptune'>neptune</Link>
                 </div>
-
-            
+       
         </div>
     )
 }

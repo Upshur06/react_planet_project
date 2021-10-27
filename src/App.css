@@ -78,11 +78,13 @@ body::after{
     font-size: 6em;
     padding-bottom: 15px;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .planet_description p{
     color: rgba(220, 220, 240, 0.8);
     line-height: 1.5;
+    text-align: left;
 }
 
 .buttons{
@@ -117,3 +119,18 @@ body::after{
     background-color: rgb(80, 32, 158);
 }
 
+@media only screen and (max-width: 952px) {
+    .planet_description h1{
+        /* text-transform: uppercase;
+        font-size: 6em;
+        padding-bottom: 15px;
+        margin-bottom: 5px; */
+        text-align: center;
+    }
+    
+    .planet_description p{
+        /* color: rgba(220, 220, 240, 0.8);
+        line-height: 1.5; */
+        text-align: center;
+    }
+}

@@ -37,12 +37,8 @@
   font-weight: 100;
 }
 
-.hamburger{
-  visibility: hidden;
-}
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 805px) {
   .header{
     display: flex;
     flex-direction: column;
@@ -52,6 +48,7 @@
 
   .header h2{
     letter-spacing: .3em;
+    width: 100%;
   }
 
   /* .hamburger{
@@ -80,3 +77,4 @@
   }
 
 }
+
