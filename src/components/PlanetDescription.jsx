@@ -23,14 +23,14 @@ const PlanetDescription = (props) => {
         // let selectBtn = document.getElementsByClassName('button_div');
         e.target.classList.add('active');
 
-        // setIsActive(true);
+        setIsActive(true);
 
         // container.classList.add('right-panel-active');
     }
 
-    const deSelectButtonHandler = ()=>{
-        // e.target.classList.add('active');
-        // setIsActive(false);
+    const deSelectButtonHandler = (e)=>{
+        e.target.classList.remove('active');
+        setIsActive(false);
     }
    
     return (
@@ -44,9 +44,9 @@ const PlanetDescription = (props) => {
             {/* <PlanetButtons /> */}
 
             <div className="buttons">
-                <div onClick={overviewHandler} onDoubleClick={selectButtonHandler} className ="button_div"> <span>01</span> Overview </div>
-                <div onClick={internalHandler} className ="button_div"> <span>02</span> Internal Structure </div>
-                <div onClick={surfaceHandler} className ="button_div"> <span>03</span> Surface Geology </div>
+                <div onClick={overviewHandler} onMouseEnter={selectButtonHandler} onMouseLeave={deSelectButtonHandler} value={isActive} className ="button_div"> <span>01</span> Overview </div>
+                <div onClick={internalHandler} onMouseEnter={selectButtonHandler} onMouseLeave={deSelectButtonHandler} value={isActive} className ="button_div"> <span>02</span> Internal Structure </div>
+                <div onClick={surfaceHandler} onMouseEnter={selectButtonHandler} onMouseLeave={deSelectButtonHandler} value={isActive} className ="button_div"> <span>03</span> Surface Geology </div>
             </div>
         </div>
     )
